@@ -1,0 +1,14 @@
+name: app
+disk: 4096
+
+type: 'nodejs:14'
+
+web:
+    locations:
+        '/':
+            root: 'public'
+            expires: 5m
+            allow: true
+            scripts: false
+            index: ['index.html']
+
