@@ -11,4 +11,7 @@ web:
             allow: true
             scripts: false
             index: ['index.html']
+            rules:
+                '\.(jpe?g|png|gif|svgz?|css|js|map|ico|bmp|eot|woff2?|otf|ttf)$':
+                    expires: 30m
 
